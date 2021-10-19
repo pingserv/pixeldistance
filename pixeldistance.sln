@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pixeldistance", "pixeldistance\pixeldistance.csproj", "{CDC73921-E603-4D8A-849B-C01CFDC69301}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDC73921-E603-4D8A-849B-C01CFDC69301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDC73921-E603-4D8A-849B-C01CFDC69301}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDC73921-E603-4D8A-849B-C01CFDC69301}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDC73921-E603-4D8A-849B-C01CFDC69301}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC6350F5-A148-4EBF-9A9C-55E64B2A36BA}
+	EndGlobalSection
+EndGlobal
