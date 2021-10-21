@@ -35,6 +35,7 @@ namespace pixeldistance
         {
             this.pixelEditor1 = new pixeldistance.PixelEditor();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pixelEditor1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,7 +54,6 @@ namespace pixeldistance
             this.pixelEditor1.Text = "pixelEditor1";
             this.pixelEditor1.TgtBitmap = null;
             this.pixelEditor1.TgtMousePos = new System.Drawing.Point(0, 0);
-            this.pixelEditor1.Click += new System.EventHandler(this.pixelEditor1_Click);
             // 
             // comboBox1
             // 
@@ -66,6 +66,8 @@ namespace pixeldistance
             source.Add(new KeyValuePair<string, Color>("Falpont", Color.Red));
             source.Add(new KeyValuePair<string, Color>("Padlópont", Color.LightBlue));
             source.Add(new KeyValuePair<string, Color>("Kontúrpont", Color.Yellow));
+            source.Add(new KeyValuePair<string, Color>("Ismeretlen", Color.LightGray));
+            source.Add(new KeyValuePair<string, Color>("Törlés", Color.White));
             this.comboBox1.DataSource = source;
 
             this.comboBox1.Location = new System.Drawing.Point(20, 20);
@@ -75,15 +77,26 @@ namespace pixeldistance
             this.comboBox1.SelectedText = "Falpont";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.combobox1_Changed);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(19, 53);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(115, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Pontok számítása";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += button1_Click;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1012, 531);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.pixelEditor1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Pixel distance";
+            this.Text = "Pixel distance";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pixelEditor1)).EndInit();
             this.ResumeLayout(false);
@@ -93,6 +106,7 @@ namespace pixeldistance
         #endregion
         private PixelEditor pixelEditor1;
         private System.Windows.Forms.ComboBox comboBox1;
+        private Button button1;
     }
 }
 
