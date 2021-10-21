@@ -36,6 +36,7 @@ namespace pixeldistance
             this.pixelEditor1 = new pixeldistance.PixelEditor();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pixelEditor1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,21 +86,31 @@ namespace pixeldistance
             this.button1.TabIndex = 3;
             this.button1.Text = "Pontok számítása";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += button1_Click;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(20, 100);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "A megfigyelőt (fekete pont) a billentyűzet\nnyilaival lehet irányítani.";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1012, 531);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.pixelEditor1);
-            this.Name = "Pixel distance";
+            this.Name = "Form1";
             this.Text = "Pixel distance";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pixelEditor1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -107,6 +118,7 @@ namespace pixeldistance
         private PixelEditor pixelEditor1;
         private System.Windows.Forms.ComboBox comboBox1;
         private Button button1;
+        private Label label1;
     }
 }
 
